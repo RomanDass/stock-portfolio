@@ -1,0 +1,59 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  font-size: inherit;
+}
+.container {
+  width: fit-content;
+  margin: auto;
+  font-size: 1em;
+  font-family: Roboto;
+}
+.title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+}
+button {
+  padding: .3em;
+  border: solid transparent 1px;
+  border-radius: 2px;
+  
+}
+input {
+  min-width: 4.5em;
+  max-width: 5em;
+}
+.row, .row-2 {
+  display: grid;
+  grid-template-columns: repeat(7, 5em); 
+  grid-column-gap: 10px;
+}
+.row {
+  margin: 1em;
+}
+.stocks {
+ padding: .1em;
+}
+.stock-r {
+  margin: 0;
+  padding: 10px;
+  border-bottom: gray 1px solid;
+}
+.total {
+  grid-template-columns: repeat(2, 1fr);
+}
+.add-item {
+  grid-template-columns: repeat(5, 4.8em);
+  grid-column-gap: 10px;
+}
+#add-button {
+  background-color: rgb(0, 125, 255);
+  color: whitesmoke;
+}
+#add-button:hover {
+  background-color: rgb(0, 75, 255);
+}
+.port-val, .port-net {
+  font-size: 1.3em;
+  font-weight: 600;
+}
